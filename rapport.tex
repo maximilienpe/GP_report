@@ -1,0 +1,108 @@
+\documentclass{scrreprt}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[french]{babel}
+\hypersetup{
+    bookmarks=false,    % show bookmarks bar
+    pdftitle={rapport_Lambolez_Petit},    % title
+    pdfauthor={Théodore Lambolez, Maximilien Petit},                     % author
+    pdfsubject={TeX and LaTeX},                        % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,       % color of internal links
+    citecolor=black,       % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=black,        % color of external links
+    linktoc=page            % only page is linked
+}
+\def\myversion{1.0}
+\date{}
+%\title{%
+
+%}
+\usepackage{hyperref}
+\begin{document}
+\begin{figure}
+   \begin{minipage}[c]{.46\linewidth}
+      \includegraphics[scale=0.3]{images/telecom.png}
+   \end{minipage} \hfill
+   \begin{minipage}[c]{.46\linewidth}
+      \includegraphics[scale=1.9]{images/lorraine.jpg}
+   \end{minipage}
+\end{figure}
+\begin{flushright}
+    \rule{15cm}{5pt}
+    \vskip1cm
+\end{flushright}
+\begin{center}
+	\vspace{3cm}
+	\fbox{
+	\begin{minipage}{0.9\textwidth}
+        	\Huge{
+			\textbf{
+			\begin{center}
+				Rapport \\Gestion de Production \\Lasurex
+				\vspace{0.5cm}
+			\end{center}
+			}
+		}
+	\end{minipage}
+	}
+\end{center}
+\begin{flushright}
+        \vspace{5cm}
+	\huge{
+        \textbf{
+	Ecrit par \\
+	\vspace{0,875cm}
+	\href{mailto:theodore.lambolez@telecomnancy.eu}{Théodore Lambolez} \\
+	\href{mailto:maximilien.petit@telecomnancy.eu}{Maximilien Petit}\\
+	}
+	}
+        \vspace{0,5cm}
+        \large{
+	\textbf{
+	\today\\
+	}	
+	}
+\end{flushright}
+
+\tableofcontents
+
+\chapter{Première partie}
+
+\paragraph{Contextes et objectifs généraux}
+Cet exercice s'inscrit dans le cours de Gestion de Production afin de mettre en pratique les notions
+vues en cours sur un ERP pédagogique :  Prélude. 
+
+Tout au long de cet exercice, nous nous intéresserons au cas de l'entreprise Lasurex qui fabrique deux
+produits finis : les meubles lasurés (EML) et les meubles vernis (EMV). L'objectif de l'entreprise est 
+au final de réusir à maximiser le taux de satisfaction client, de minimiser l'immobilisation des stocks et
+le coût de réalisation de ces produits. 
+
+Dans un premier temps, nous avons configuré l'ERP en le remplissant. Cette tâche nous a pris une séance de deux
+heures de TP à l'AIP. En effet, il a fallut prendre en main le logiciel Prelude et comprendre dans quel ordre
+remplir chacune des rubriques de l'onglet Données. 
+
+\chapter{Deuxième partie} 
+
+
+\paragraph{Notes}
+
+On a fait un ordonnancement à capacité finie au plus tard, pour charger les machines au maximum. 
+On a ajouté une machine de vernissage. On constate que le taux de charge demeure élevé, donc on peut 
+tenter d'en remettre une autre dans ce même poste.
+
+On a rajouté une deuxième machine vernissage. Le taux de charge ne change pas ! 
+
+On a ajouté une équipe cette fois-ci. Toutes les OF ont été ordonnancées. Mais nous avons
+trois OF en retard. Nous allons essayer de maximiser la satisfaction client. Un OF en retard.
+Plus de stocks et plus de coût d'emploie. 
+
+
+\end{document}
