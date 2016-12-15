@@ -85,20 +85,22 @@ produits finis : les meubles lasurés (EML) et les meubles vernis (EMV). L'objec
 de maximiser le taux de satisfaction client, de minimiser l'immobilisation des stocks et
 le coût de réalisation de ces produits. Afin de réussir ces tâches, nous avons la possibilité de modifier le nombre de machines, l'ordonnancement ou encore le nombre d'heures de travail des employés. Cela nous a permis de mettre en application nos conséquences et d'analyser l'impact de l'utilisation des ressources dans le déroulement d'une entreprise.
 
-Dans un premier temps, nous avons configuré l'ERP en le remplissant. Cette tâche nous a pris une séance de deux heures de TP à l'AIP. En effet, il a fallut prendre en main le logiciel Prelude et comprendre dans quel ordre remplir chacune des rubriques de l'onglet Données. Chaque donnée (postes de charges, articles, nomenclatures, gammes, prévisions, commandes, OAs, OFs) a des dépendances et nous avons du les analyser afin de respecter celles-ci. Nous avions accès à des données dans la feuille PH1partiel.pdf distribuée en cours magistral. Au cours de celui-ci, nous l'avions complétée avec le professeur. Pour les articles, nous avons pris en compte le stock de sécurité, les besoins quotidiens et les lots multiples. Pour les nomenclatures, nous avons pris en compte les coefficients de lien. Chaque gamme est composé de phases où nous allons renseigner le temps de réglages et le temps unitaire de réalisation d'une tâche.
+Dans un premier temps, nous avons configuré l'ERP en le remplissant. Cette tâche nous a pris une séance de deux heures de TP à l'AIP. En effet, il a fallut prendre en main le logiciel Prelude et comprendre dans quel ordre remplir chacune des rubriques de l'onglet Données. Chaque donnée (postes de charges, articles, nomenclatures, gammes, prévisions, commandes, OAs, OFs) a des dépendances et nous avons dû les analyser afin de respecter celles-ci. Nous avions accès à des données dans la feuille PH1partiel.pdf distribuée en cours magistral. Au cours de celui-ci, nous l'avions complétée avec le professeur. Pour les articles, nous avons pris en compte le stock de sécurité, les besoins quotidiens et les lots multiples. Pour les nomenclatures, nous avons pris en compte les coefficients de lien. Chaque gamme est composé de phases où nous allons renseigner le temps de réglages et le temps unitaire de réalisation d'une tâche.
 
-Dans un second, nous avons mis en place le premier ordonnancement dans le but de l'étudier. Cela nous a pris une séance de TP à l'AIP. Pour le mettre en place, nous avons procédé à une suite de méthodes : calcul des besoins nets, jalonnement, affermissement, ordonnancement. Puis, à chaque réalisation, vérifier la cohérence du résultat grâce aux programmes directeurs était obligatoire. Après plusieurs essais, nous n'arrivions pas à executer tous les OFs en temps voulu (impossible à programmer). Cela correspondait à la suite du TP, c'est à dire, modifier des données techniques afin de rendre le programme possible.
+Dans un second temps, nous avons mis en place le premier ordonnancement dans le but de l'étudier. Cela nous a pris une séance de TP à l'AIP. Pour le mettre en place, nous avons procédé à une suite de méthodes : calcul des besoins nets, jalonnement, affermissement, ordonnancement. Puis, à chaque réalisation, vérifier la cohérence du résultat grâce aux programmes directeurs était obligatoire. Après plusieurs essais, nous n'arrivions pas à executer tous les OFs en temps voulu (impossible à programmer). Cela correspondait à la suite du TP, c'est à dire, modifier des données techniques afin de rendre le programme possible.
 
 
 \chapter{Deuxième partie} 
 
 \paragraph{Résultats de planification}
 
-Au cours de notre première configuration, nous avons fait face à plusieurs erreurs dans la réalisation des OFs et OAs. Tout d'abord, les Ordres d'Achats correspondent aux moments où nous passons commandes afin d'avoir les produits M2 et M3 en temps et en heure pour la production. Ceux-ci sont configurés par nous-mêmes à l'avance ou suggérés par le logiciel. Cepandant, certains n'ont jamais été programmés(impossible à placer) par les Ordres Fermes éxecutés  ou jamais validé (impossible à supprimer). 
+Au cours de notre première configuration, nous avons fait face à plusieurs erreurs dans la réalisation des OFs et OAs. Tout d'abord, les Ordres d'Achats correspondent aux moments où nous passons commandes afin d'avoir les produits M2 et M3 en temps et en heure pour la production. Ceux-ci sont configurés par nous-mêmes à l'avance ou suggérés par le logiciel. Cependant, certains n'ont jamais été programmés(impossible à placer) par les Ordres Fermes exécutés  ou jamais validé (impossible à supprimer). 
 
 Le calcul des charges représente chaque OFs par semaine et donc la production réalisée en entreprise.
 Elle permet de vérifier que tous les OFs ont été effectués et que le travail est régulier et équilibré
 (contre exemple: une semaine légère puis une surchargée). De plus, il permet de vérifier que le jalonnement proposé est correcte afin de passer à la phase d'affermissement. Enfin, le calcul des charges indique, après analyse, les quantités de produits disponibles à la vente.
+
+
 
 \chapter{Troisième partie}
 
@@ -113,9 +115,12 @@ le coût de réalisation de ces produits. Nous commençons par un un ordonnancem
    \end{minipage} \hfill
 \end{figure}
 
-L'objectif ne peut pas être réalisé à temps, des ordres sont quand même réalisés au plus tôt pour que les délais soit respectés.
+L'objectif ne peut pas être réalisé à temps, des ordres sont quand mêmes réalisés au plus tôt pour que les délais soit respectés. On peut en conclure que 
+le délais est trop court pour réaliser tous les ordonnancements. Il faut donc trouver une autre solution. 
 
-On a ajouté une machine de vernissage car on a constaté que le taux de charge demeure élevé (c'est à dire que les machines sont actives sur le temps de travail).
+
+Par exemple, on a essayé d’ajouter une machine de vernissage dans le but de réduire le taux de charge de chacune des machines. En effet, lorsqu’on regarde dans l’onglet permettant de consulter
+les taux de charges de ces machines, on constatait que 
 
 \begin{figure}
    \begin{minipage}[c]{.46\linewidth}
