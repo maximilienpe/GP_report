@@ -83,9 +83,9 @@ vues en cours sur un ERP pédagogique :  Prélude.
 Tout au long de cet exercice, nous nous intéressons au cas de l'entreprise Lasurex qui fabrique deux
 produits finis : les meubles lasurés (EML) et les meubles vernis (EMV). L'objectif de l'entreprise est 
 de maximiser le taux de satisfaction client, de minimiser l'immobilisation des stocks et
-le coût de réalisation de ces produits. Afin de réussir ces tâches, nous avons la possibilité de modifier le nombre de machines, l'ordonnancement ou encore le nombre d'heures de travail des employés. Cela nous a permis de mettre en application nos conséquences et d'analyser l'impact de l'utilisation des ressources dans le déroulement d'une entreprise.
+le coût de réalisation de ces produits. Afin de réussir ces tâches, nous avons la possibilité de modifier le nombre de machines, l'ordonnancement ou encore le nombre d'heures de travail des employés. Cela nous a permis de mettre en application nos connaissances et d'analyser l'impact de l'utilisation des ressources dans le déroulement d'une entreprise.
 
-Dans un premier temps, nous avons configuré l'ERP en le remplissant. Cette tâche nous a pris une séance de deux heures de TP à l'AIP. En effet, il a fallut prendre en main le logiciel Prelude et comprendre dans quel ordre remplir chacune des rubriques de l'onglet Données. Chaque donnée (postes de charges, articles, nomenclatures, gammes, prévisions, commandes, OAs, OFs) a des dépendances et nous avons dû les analyser afin de respecter celles-ci. Nous avions accès à des données dans la feuille PH1partiel.pdf distribuée en cours magistral. Au cours de celui-ci, nous l'avions complétée avec le professeur. Pour les articles, nous avons pris en compte le stock de sécurité, les besoins quotidiens et les lots multiples. Pour les nomenclatures, nous avons pris en compte les coefficients de lien. Chaque gamme est composé de phases où nous allons renseigner le temps de réglages et le temps unitaire de réalisation d'une tâche.
+Dans un premier temps, nous avons configuré l'ERP en le remplissant. Cette tâche nous a pris une séance de deux heures de TP à l'AIP. En effet, il a fallu prendre en main le logiciel Prelude et comprendre dans quel ordre remplir chacune des rubriques de l'onglet Données. Chaque donnée (postes de charges, articles, nomenclatures, gammes, prévisions, commandes, OAs, OFs) a des dépendances et nous avons dû les analyser afin de respecter celles-ci. Nous avions accès à des données dans la feuille PH1partiel.pdf distribuée en cours magistral. Au cours de celui-ci, nous l'avions complétée avec le professeur. Pour les articles, nous avons pris en compte le stock de sécurité, les besoins quotidiens et les lots multiples. Pour les nomenclatures, nous avons pris en compte les coefficients de lien. Chaque gamme est composé de phases où nous allons renseigner le temps de réglages et le temps unitaire de réalisation d'une tâche.
 
 Dans un second temps, nous avons mis en place le premier ordonnancement dans le but de l'étudier. Cela nous a pris une séance de TP à l'AIP. Pour le mettre en place, nous avons procédé à une suite de méthodes : calcul des besoins nets, jalonnement, affermissement, ordonnancement. Puis, à chaque réalisation, vérifier la cohérence du résultat grâce aux programmes directeurs était obligatoire. Après plusieurs essais, nous n'arrivions pas à executer tous les OFs en temps voulu (impossible à programmer). Cela correspondait à la suite du TP, c'est à dire, modifier des données techniques afin de rendre le programme possible.
 
@@ -94,7 +94,7 @@ Dans un second temps, nous avons mis en place le premier ordonnancement dans le 
 
 \paragraph{Résultats de planification}
 
-Au cours de notre première configuration, nous avons fait face à plusieurs erreurs dans la réalisation des OFs et OAs. Tout d'abord, les Ordres d'Achats correspondent aux moments où nous passons commandes afin d'avoir les produits M2 et M3 en temps et en heure pour la production. Ceux-ci sont configurés par nous-mêmes à l'avance ou suggérés par le logiciel. Cependant, certains n'ont jamais été programmés(impossible à placer) par les Ordres Fermes exécutés  ou jamais validé (impossible à supprimer). 
+Au cours de notre première configuration, nous avons fait face à plusieurs erreurs dans la réalisation des OFs et OAs. Tout d'abord, les Ordres d'Achats correspondent aux moments où nous passons commandes afin d'avoir les produits M2 et M3 en temps et en heure pour la production. Ceux-ci sont configurés par nous-mêmes à l'avance ou suggérés par le logiciel. Cependant, certains n'ont jamais été programmés(impossible à placer) par les Ordres Fermes exécutés  ou jamais validés (impossible à supprimer). 
 
 Le calcul des charges représente chaque OFs par semaine et donc la production réalisée en entreprise.
 Elle permet de vérifier que tous les OFs ont été effectués et que le travail est régulier et équilibré
@@ -116,8 +116,7 @@ le coût de réalisation de ces produits. Nous commençons par un un ordonnancem
 \caption{Résultat suite à l'ordonnancement à capacité finie avec option de gestion au plus tard}
 \end{figure}
 
-L'objectif ne peut pas être réalisé à temps, des ordres sont quand mêmes réalisés au plus tôt pour que les délais soit respectés. On peut en conclure que 
-le délais est trop court pour réaliser tous les ordonnancements. Il faut donc trouver une autre solution. 
+L'objectif ne peut pas être réalisé à temps, des ordres sont quand mêmes réalisés au plus tôt pour que les délais soit respectés. On peut en conclure que le délai est trop court pour réaliser tous les ordonnancements. Il faut donc trouver une autre solution. 
 
 \newpage
 Par exemple, on a essayé d’ajouter une machine de vernissage dans le but de réduire le taux de charge de chacune des machines. En effet, lorsqu’on regarde dans l’onglet permettant de consulter
@@ -162,11 +161,9 @@ Un autre ordonnancement possible est au plus tôt en décalant tous les OFs le p
 Pour conclure, l'achat de nouvelle(s) machine(s) permet la réalisation de tous les OFs au détriment d'un coût fixe important qui se répercutera sur le coût des produits finis.
 De plus, on remarque qu'on a beaucoup d'OFs en avance ce qui implique qu'on aura des frais supplémentaires dûs au stocks.
 
-L'emploie de plus de main d'oeuvre permet la réalisation de ce même critère (le taux de satisfaction client), cette fois-ci au détriment d'un coûts supplémentaire 
-réguliers (le salaire des employés et le stock qui est très important avec deux équipes de plus). 
+L'emploi de plus de main d'oeuvre permet la réalisation de ce même critère (le taux de satisfaction client), cette fois-ci au détriment d'un coût supplémentaire régulier (le salaire des employés et le stock qui est très important avec deux équipes de plus). 
 
 Enfin, si nous souhaitons minimiser les coûts supplémentaires tout en gardant un taux de satisfaction client acceptable, 
-il est préférable de lancer les OFs plus tôt. L'anticipation est donc, ici, un moyen difficile à mettre en place mais moins
-coûteux. 
+il est préférable de lancer les OFs plus tôt. L'anticipation est donc, ici, un moyen difficile à mettre en place mais moins coûteux. 
 
 \end{document}
