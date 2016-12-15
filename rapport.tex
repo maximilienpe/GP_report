@@ -29,10 +29,10 @@
 \begin{document}
 \begin{figure}
    \begin{minipage}[c]{.46\linewidth}
-      \includegraphics[scale=0.3]{images/telecom.png}
+      \includegraphics[scale=0.3]{telecom.png}
    \end{minipage} \hfill
    \begin{minipage}[c]{.46\linewidth}
-      \includegraphics[scale=1.9]{images/lorraine.jpg}
+      \includegraphics[scale=1.9]{lorraine.jpg}
    \end{minipage}
 \end{figure}
 \begin{flushright}
@@ -80,28 +80,69 @@
 Cet exercice s'inscrit dans le cours de Gestion de Production afin de mettre en pratique les notions
 vues en cours sur un ERP pédagogique :  Prélude. 
 
-Tout au long de cet exercice, nous nous intéresserons au cas de l'entreprise Lasurex qui fabrique deux
+Tout au long de cet exercice, nous nous intéressons au cas de l'entreprise Lasurex qui fabrique deux
 produits finis : les meubles lasurés (EML) et les meubles vernis (EMV). L'objectif de l'entreprise est 
-au final de réusir à maximiser le taux de satisfaction client, de minimiser l'immobilisation des stocks et
-le coût de réalisation de ces produits. 
+de maximiser le taux de satisfaction client, de minimiser l'immobilisation des stocks et
+le coût de réalisation de ces produits. Afin de réussir ces tâches, nous avons la possibilité de modifier le nombre de machines, l'ordonnancement ou encore le nombre d'heures de travail des employés. Cela nous a permis de mettre en application nos conséquences et d'analyser l'impact de l'utilisation des ressources dans le déroulement d'une entreprise.
 
-Dans un premier temps, nous avons configuré l'ERP en le remplissant. Cette tâche nous a pris une séance de deux
-heures de TP à l'AIP. En effet, il a fallut prendre en main le logiciel Prelude et comprendre dans quel ordre
-remplir chacune des rubriques de l'onglet Données. 
+Dans un premier temps, nous avons configuré l'ERP en le remplissant. Cette tâche nous a pris une séance de deux heures de TP à l'AIP. En effet, il a fallut prendre en main le logiciel Prelude et comprendre dans quel ordre remplir chacune des rubriques de l'onglet Données. Chaque donnée (postes de charges, articles, nomenclatures, gammes, prévisions, commandes, OAs, OFs) a des dépendances et nous avons du les analyser afin de respecter celles-ci. Nous avions accès à des données dans la feuille PH1partiel.pdf distribuée en cours magistral. Au cours de celui-ci, nous l'avions complétée avec le professeur. Pour les articles, nous avons pris en compte le stock de sécurité, les besoins quotidiens et les lots multiples. Pour les nomenclatures, nous avons pris en compte les coefficients de lien. Chaque gamme est composé de phases où nous allons renseigner le temps de réglages et le temps unitaire de réalisation d'une tâche.
+
+Dans un second, nous avons mis en place le premier ordonnancement dans le but de l'étudier. Cela nous a pris une séance de TP à l'AIP. Pour le mettre en place, nous avons procédé à une suite de méthodes : calcul des besoins nets, jalonnement, affermissement, ordonnancement. Puis, à chaque réalisation, vérifier la cohérence du résultat grâce aux programmes directeurs était obligatoire. Après plusieurs essais, nous n'arrivions pas à executer tous les OFs en temps voulu (impossible à programmer). Cela correspondait à la suite du TP, c'est à dire, modifier des données techniques afin de rendre le programme possible.
+
 
 \chapter{Deuxième partie} 
 
+\paragraph{Résultats de planification}
 
-\paragraph{Notes}
+Au cours de notre première configuration, nous avons fait face à plusieurs erreurs dans la réalisation des OFs et OAs. Tout d'abord, les Ordres d'Achats correspondent aux moments où nous passons commandes afin d'avoir les produits M2 et M3 en temps et en heure pour la production. Ceux-ci sont configurés par nous-mêmes à l'avance ou suggérés par le logiciel. Cepandant, certains n'ont jamais été programmés(impossible à placer) par les Ordres Fermes éxecutés  ou jamais validé (impossible à supprimer). 
 
-On a fait un ordonnancement à capacité finie au plus tard, pour charger les machines au maximum. 
-On a ajouté une machine de vernissage. On constate que le taux de charge demeure élevé, donc on peut 
-tenter d'en remettre une autre dans ce même poste.
+Le calcul des charges représente chaque OFs par semaine et donc la production réalisée en entreprise.
+Elle permet de vérifier que tous les OFs ont été effectués et que le travail est régulier et équilibré
+(contre exemple: une semaine légère puis une surchargée). De plus, il permet de vérifier que le jalonnement proposé est correcte afin de passer à la phase d'affermissement. Enfin, le calcul des charges indique, après analyse, les quantités de produits disponibles à la vente.
 
-On a rajouté une deuxième machine vernissage. Le taux de charge ne change pas ! 
+\chapter{Troisième partie}
 
-On a ajouté une équipe cette fois-ci. Toutes les OF ont été ordonnancées. Mais nous avons
-trois OF en retard. Nous allons essayer de maximiser la satisfaction client. Un OF en retard.
+\paragraph{Mise en oeuvre de solutions possibles}
+
+Dans cette dernière partie, nous proposons des solutions afin de répondre à l'objectif principal : maximiser le taux de satisfaction client, minimiser l'immobilisation des stocks et
+le coût de réalisation de ces produits. Nous commençons par un un ordonnancement à capacité finie au plus tard, pour charger les machines au maximum.
+
+\begin{figure}
+   \begin{minipage}[c]{.46\linewidth}
+      \includegraphics[scale=0.3]{rapportAuPlusTard.png}
+   \end{minipage} \hfill
+\end{figure}
+
+L'objectif ne peut pas être réalisé à temps, des ordres sont quand même réalisés au plus tôt pour que les délais soit respectés.
+
+On a ajouté une machine de vernissage car on a constaté que le taux de charge demeure élevé (c'est à dire que les machines sont actives sur le temps de travail).
+
+\begin{figure}
+   \begin{minipage}[c]{.46\linewidth}
+      \includegraphics[scale=0.3]{1vernisenplus.png}
+   \end{minipage} \hfill
+\end{figure}
+
+Tous les ordonnancements ont pu être placés mais il y a un retard trop important. On a rajouté une deuxième machine de vernissage. Le taux de charge ne change pas ! On décide alors de s'orienter vers une autre modification. 
+
+On a ajouté une équipe cette fois-ci : 
+
+\begin{figure}
+   \begin{minipage}[c]{.46\linewidth}
+      \includegraphics[scale=0.3]{1equipeenplus.png}
+   \end{minipage} \hfill
+\end{figure}
+
+Toutes les OF ont été ordonnancés. Mais nous en avons trois en retard. Nous allons essayer de maximiser la satisfaction client. 
+
+\begin{figure}
+   \begin{minipage}[c]{.46\linewidth}
+      \includegraphics[scale=0.3]{2equipeenplus.png}
+   \end{minipage} \hfill
+\end{figure}
+
+
+Un OF en retard.
 Plus de stocks et plus de coût d'emploie. 
 
 
