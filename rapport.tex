@@ -141,7 +141,7 @@ On a ajouté une équipe cette fois-ci :
 \end{figure}
 
 
-Toutes les OF ont été ordonnancés. Mais nous en avons trois en retard. Nous allons essayer de maximiser la satisfaction client. 
+Toutes les OF ont été ordonnancés. Mais nous en avons trois en retard. Nous allons essayer de maximiser la satisfaction client en ajoutant une équipe de plus. La production sera donc active 24 heures sur 24.
 
 \begin{figure}[!h]
 \centering
@@ -149,9 +149,15 @@ Toutes les OF ont été ordonnancés. Mais nous en avons trois en retard. Nous a
 \caption{Résultat suite à l'ordonnancement à capacité finie avec option de gestion au plus tard et deux équipes sumplémentaires}
 \end{figure}
 
+Avec cette configuration, nous n'avons plus qu'un OF en retard. Cependant, cette méthode génère des coûts supplémentaires en main d'oeuvre et en stocks.
 
-Un OF en retard.
-Plus de stocks et plus de coût d'emploie. 
+Un autre ordonnancement possible est au plus tôt en décalant tous les OFs le plus tôt possible tout en respectant toutefois la date du 18 février. Cette organisation engendre 5 retards d'OFs mais moins de coûts de manière générale.
+
+ \begin{figure}[!h]
+\centering
+\includegraphics[width=10cm, height=5cm]{RapportauPlusTotLancement.png}
+\caption{Résultat suite à l'ordonnancement à capacité finie avec option de gestion au plus tôt}
+\end{figure}
 
 
 \end{document}
