@@ -40,7 +40,7 @@
     \vskip1cm
 \end{flushright}
 \begin{center}
-	\vspace{3cm}
+	\vspace{2.5cm}
 	\fbox{
 	\begin{minipage}{0.9\textwidth}
         	\Huge{
@@ -109,41 +109,44 @@ Elle permet de vérifier que tous les OFs ont été effectués et que le travail
 Dans cette dernière partie, nous proposons des solutions afin de répondre à l'objectif principal : maximiser le taux de satisfaction client, minimiser l'immobilisation des stocks et
 le coût de réalisation de ces produits. Nous commençons par un un ordonnancement à capacité finie au plus tard, pour charger les machines au maximum.
 
-\begin{figure}
-   \begin{minipage}[c]{.46\linewidth}
-      \includegraphics[scale=0.3]{rapportAuPlusTard.png}
-   \end{minipage} \hfill
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=10cm, height=5cm]{rapportAuPlusTard.png}
+\caption{Résultat suite à l'ordonnancement à capacité finie avec option de gestion au plus tard}
 \end{figure}
 
 L'objectif ne peut pas être réalisé à temps, des ordres sont quand mêmes réalisés au plus tôt pour que les délais soit respectés. On peut en conclure que 
 le délais est trop court pour réaliser tous les ordonnancements. Il faut donc trouver une autre solution. 
 
-
+\newpage
 Par exemple, on a essayé d’ajouter une machine de vernissage dans le but de réduire le taux de charge de chacune des machines. En effet, lorsqu’on regarde dans l’onglet permettant de consulter
-les taux de charges de ces machines, on constatait que 
+les taux de charges de ces machines, on constatait que la machine de vernissage était surchargée.
 
-\begin{figure}
-   \begin{minipage}[c]{.46\linewidth}
-      \includegraphics[scale=0.3]{1vernisenplus.png}
-   \end{minipage} \hfill
+\begin{figure}[!h]
+\centering
+\includegraphics[width=10cm, height=5cm]{1vernisenplus.png}
+\caption{Résultat suite à l'ordonnancement à capacité finie avec option de gestion au plus tard et une machine de vernissage supplémentaire}
 \end{figure}
 
-Tous les ordonnancements ont pu être placés mais il y a un retard trop important. On a rajouté une deuxième machine de vernissage. Le taux de charge ne change pas ! On décide alors de s'orienter vers une autre modification. 
+
+Tous les ordonnancements ont pu être placés mais il y a un retard trop important. On a rajouté une deuxième machine de vernissage. Le taux de charge n’a pas changé pour autant. On décide alors de s'orienter vers une autre modification. 
 
 On a ajouté une équipe cette fois-ci : 
 
-\begin{figure}
-   \begin{minipage}[c]{.46\linewidth}
-      \includegraphics[scale=0.3]{1equipeenplus.png}
-   \end{minipage} \hfill
+\begin{figure}[!h]
+\centering
+\includegraphics[width=10cm, height=5cm]{1equipeenplus.png}
+\caption{Résultat suite à l'ordonnancement à capacité finie avec option de gestion au plus tard et une équipe supplémentaire}
 \end{figure}
+
 
 Toutes les OF ont été ordonnancés. Mais nous en avons trois en retard. Nous allons essayer de maximiser la satisfaction client. 
 
-\begin{figure}
-   \begin{minipage}[c]{.46\linewidth}
-      \includegraphics[scale=0.3]{2equipeenplus.png}
-   \end{minipage} \hfill
+\begin{figure}[!h]
+\centering
+\includegraphics[width=10cm, height=5cm]{2equipeenplus.png}
+\caption{Résultat suite à l'ordonnancement à capacité finie avec option de gestion au plus tard et deux équipes sumplémentaires}
 \end{figure}
 
 
